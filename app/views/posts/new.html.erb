@@ -1,0 +1,18 @@
+<%= form_with(model: @post, local: true) do |form| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+　　　 <h2>⚠️エラー⚠️</h2>
+      <h2>つぶやけてないよ！</h2>
+      <h2>1-140字以内でつぶやこう！</h2>
+    </div>
+  <% end %>
+
+<div class="blog_content">
+  <p>今日の出来事をつぶやいてみよう！</p>
+  <%= form.text_field :content %>
+</div>
+
+
+  <%= form.submit %>
+  <%= link_to '一覧に戻る', posts_path %>
+<% end %>

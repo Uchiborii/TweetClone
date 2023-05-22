@@ -1,0 +1,15 @@
+<%= form_with(model: @post, local: true, url: post_path(@post), method: :patch) do |form| %>
+
+    <% if @post.errors.any? %>
+        <div id="error_explanation">
+        <h2>つぶやけてないよ！</h2>
+        <h2>1-140字でつぶやこう！</h2>
+
+    <% end %>
+        <div class="blog_content>
+            <%= form.label :もう一度つぶやいてみよう%>
+            <%= form.text_field :content %>
+        </div>
+        <%= form.submit %>
+        <%= link_to '一覧に戻る', posts_path %>
+    <% end %>

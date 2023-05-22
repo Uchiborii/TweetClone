@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TwitterClone</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+<header>
+  <ul class="top_menu clearfix">
+    <li><%= link_to 'つぶやき一覧', posts_path %></li>
+    <li><%= link_to 'つぶやいてみる💭', new_post_path %></li>
+  </ul>
+</header>
+
+
+  <body>
+    <%= yield %>
+  </body>
+
+  <footer>@uchibori.com</footer>
+</html>

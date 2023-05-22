@@ -1,0 +1,45 @@
+input[type="text"] {
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+p {
+    margin: 10px auto;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  #error_explanation {
+    text-align: center;
+  }
+  
+  .blog_content {
+    text-align: center;
+  }
+  
+  .blog_content p {
+    margin-bottom: 10px;
+  }
+  
+  form {
+    text-align: center;
+  }
+  
+  form input[type="submit"] {
+    margin-top: 10px;
+  }
+  
+  .link-to-list {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
